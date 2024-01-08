@@ -90,7 +90,8 @@ namespace EmptyYourHands
             configMenu.AddBoolOption(
                 mod: ModManifest,
                 name: () => "Enable reselect old tool position",
-                tooltip: () => "Reselect toolbar position to where it was prior emptying hands.\n\n" +
+                tooltip: () => "Reselect toolbar position to where it was prior emptying hands\n" +
+                "when you switch items using mouse scroll wheel or controller triggers.\n\n" +
                 "Turn this off and report to me if you experienced weird behaviour.",
                 getValue: () => Config.EnableReselectOldToolPosition,
                 setValue: value => Config.EnableReselectOldToolPosition = value);
